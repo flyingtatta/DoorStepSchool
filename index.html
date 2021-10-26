@@ -31,20 +31,24 @@
     background-color: #18364A;
     border-color: #18364A;
     }
+
+    .carousel-item{
+      height: 400px;
+    }
     </style>
   </head>
   <body>
-      <nav class="navbar navbar-expand-lg navbar-dark shadow-lg" aria-label="Tenth navbar example" style="background-color: rgba(24, 54, 74, 1);">
+    <!-- NAVIGATION START -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: rgba(24, 54, 74, 1);">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="logo.jpg" class="rounded" alt="" width="175" height="65">
+            <img src="logo.jpg" class="rounded" alt="" width="100" height="50">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
-          <div class="collapse navbar-collapse" id="navbarsExample08">
-            <ul class="navbar-nav me-auto">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
                 <ul class="dropdown-menu" aria-labelledby="dropdown02">
@@ -105,75 +109,54 @@
           </div>
         </div>
       </nav>
-      <div class="row mt-2">
-        <div class="col-lg-10 col-sm-12 ">
-          <div id="carouselExampleInterval" class="carousel slide shadow" data-bs-ride="carousel">
-            <div class="carousel-inner rounded">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <img src="https://www.doorstepschool.org/pune/wp-content/uploads/2017/03/website_slider_02.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="https://www.doorstepschool.org/pune/wp-content/uploads/2017/03/website_slider_041.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="https://www.doorstepschool.org/pune/wp-content/uploads/2013/02/DSC05455_990px.jpg" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+    <!-- NAVIGATION END -->
+
+    <!-- CAROUSEL START -->
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://www.doorstepschool.org/pune/wp-content/uploads/2017/03/website_slider_02.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.doorstepschool.org/pune/wp-content/uploads/2017/03/website_slider_041.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.doorstepschool.org/pune/wp-content/uploads/2013/02/DSC05455_990px.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!-- CAROUSEL END -->
 
-        <div class="col-lg-2 col-sm-12 ">
-          <div class="row d-none d-lg-block">
-            <div class="col-12">
-              <img src="https://www.doorstepschool.org/pune/wp-content/uploads/2015/03/dss_logo_transparent_background_300x200_sharp.png" class="img-fluid" alt="">
-            </div>
+      <div class="container mt-3">
+        <div class="card text-center">
+          <div class="card-header" style="background: transparent">
+            <ul class="nav nav-pills card-header-pills">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Pune</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Our Bright Stars</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mumbai</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title display-4 text-start">Welcome to The Society for Door Step Schools</h5>
+            <p class="card-text text-start">“The Society for Door Step Schools” was established in Mumbai, India in 1989 with the aim of addressing illiteracy amongst the marginalized sections of society. The school provides education and support to the often-forgotten children of pavement and slum dwellers, construction site families and many other underprivileged families. Many of these children are not enrolled in school and have limited access to books and a place to study. Additionally, many of these children are forced to drop out of school to work or care for younger children. With neither support nor resources at home these children too often suffer from very low learning levels. At Door Step School, we are trying to bridge this gap by bringing education to the “Doorstep” of these underprivileged children.</p>
+            <iframe class="rounded" src="https://www.youtube.com/embed/uOHviRWA1Nk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>
-
-
-      <div class="row mt-2 d-flex justify-content-center">
-        <div class="col-12">
-          <div class="card text-center shadow-lg">
-            <div class="card-header">
-              <ul class="nav nav-pills card-header-pills">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Pune</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Our Bright Stars</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Mumbai</a>
-                </li>
-              </ul>
-            </div>
-            <div class="card-body">
-              <div class="row">
-                <div class="col-12 col-lg-9">
-                  <h5 class="card-title display-4 text-start">Welcome to The Society for Door Step Schools</h5>
-                  <p class="card-text text-start">“The Society for Door Step Schools” was established in Mumbai, India in 1989 with the aim of addressing illiteracy amongst the marginalized sections of society. The school provides education and support to the often-forgotten children of pavement and slum dwellers, construction site families and many other underprivileged families. Many of these children are not enrolled in school and have limited access to books and a place to study. Additionally, many of these children are forced to drop out of school to work or care for younger children. With neither support nor resources at home these children too often suffer from very low learning levels. At Door Step School, we are trying to bridge this gap by bringing education to the “Doorstep” of these underprivileged children.</p>
-                </div>
-
-                <div class="col-12 col-lg-3">
-                  <iframe class="rounded" src="https://www.youtube.com/embed/uOHviRWA1Nk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
